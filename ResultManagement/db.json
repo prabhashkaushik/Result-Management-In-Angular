@@ -1,0 +1,48 @@
+{
+  "posts": [
+    {
+      "id": 8,
+      "rollNumber": 15,
+      "name": "sharma",
+      "dateOfBirth": "2022-09-14",
+      "score": 88
+    },
+    {
+      "id": 9,
+      "rollNumber": 11,
+      "name": "prabhash sharma",
+      "dateOfBirth": "2000-07-22",
+      "score": 90
+    }
+  ],
+  "teacher": [
+    {
+      "fullName": "shubham",
+      "email": "shubham@gmail.com",
+      "password": "abc",
+      "id": 1
+    },
+    {
+      "fullName": "shu",
+      "email": "twinkle@gmail.com",
+      "password": "abc",
+      "id": 2
+    },
+    {
+      "fullName": "prabhash sharma",
+      "email": "prabhashkaushik123@gmail.com",
+      "password": "123",
+      "id": 3
+    },
+    {
+      "fullName": "prabhash sharma",
+      "email": "prabhashkaushik123@gmail.com",
+      "password": "123",
+      "id": 4
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}

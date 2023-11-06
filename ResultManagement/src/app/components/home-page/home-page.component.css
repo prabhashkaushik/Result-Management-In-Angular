@@ -1,0 +1,43 @@
+.loginOption {
+
+    background-image: url('../../..\assets\images\signup.jpg');
+    
+    
+    height: 84.8%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.position{
+    margin: 0;
+    position: absolute;
+    top: 38%;
+    
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+    font-size: 2.5em; /* 40px/16=2.5em */
+  }
+
+
+.buttons1{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 42%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    
+}
+.buttons2{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 58%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    
+}

@@ -1,0 +1,49 @@
+<app-header></app-header>
+
+
+<div class="container">
+    <div class="screen">
+        <div class="screen__content">
+            <form class="login" [formGroup]="loginForm" (ngSubmit)="studentLogIn()">
+                <div class="form-group">
+                    <!-- <label for="exampleInputEmail1">Email address</label> -->
+                    <input formControlName="rollNumber" type="number" class="form-control" class="login__input"
+                    aria-describedby="dateOfBirth-help" placeholder="Enter Your Roll Number">
+                    <div *ngIf="loginForm.get('rollNumber')?.invalid && loginForm.get('rollNumber')?.touched">
+                        <p>Please enter a valid roll number.</p>
+                      </div>
+                    
+                    <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                </div>
+                <div class="form-group">
+                    <!-- <label for="exampleInputPassword1">Password</label> -->
+                    <input formControlName="dateOfBirth" type="date" class="form-control" class="login__input"
+                        id="exampleInputPassword1" placeholder="Password">
+                        <div *ngIf="loginForm.get('dateOfBirth')?.invalid && loginForm.get('dateOfBirth')?.touched">
+                            <p>Please enter a valid DOB </p>
+                          </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary mt-3 mb-3" class="button login__submit">Search</button>
+              
+            </form>
+            <div class="social-login">
+                <h3>log in via</h3>
+                <div class="social-icons">
+                    <a href="#" class="social-login__icon fab fa-instagram"></a>
+                    <a href="#" class="social-login__icon fab fa-facebook"></a>
+                    <a href="#" class="social-login__icon fab fa-twitter"></a>
+                </div>
+            </div>
+        </div>
+        <div class="screen__background">
+            <span class="screen__background__shape screen__background__shape4"></span>
+            <span class="screen__background__shape screen__background__shape3"></span>
+            <span class="screen__background__shape screen__background__shape2"></span>
+            <span class="screen__background__shape screen__background__shape1"></span>
+        </div>
+    </div>
+</div>
+
+
+<app-footer></app-footer>

@@ -1,0 +1,17 @@
+.heading{
+    background-color:rgb(151, 135, 203);
+    margin-top: 0%;
+    display: flex;
+    
+}
+.title{
+    color: black;
+    text-align: center;
+    margin-left: 34%;
+}
+.btn{
+margin-left: 30%;
+}
+.app-title{
+    width:348px;
+}

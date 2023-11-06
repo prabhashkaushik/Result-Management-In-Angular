@@ -1,0 +1,13 @@
+.result{
+    text-size-adjust: 10px;
+    background-image: url('../../../assets/images/student-dashboard.jpg');
+    height: 84.8%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1{
+    padding-top: 6px;
+    padding-left:31%;
+}
+    

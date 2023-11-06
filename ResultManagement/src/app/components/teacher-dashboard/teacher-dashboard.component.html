@@ -1,0 +1,74 @@
+<app-header></app-header>
+<div class="navbar">
+    <button class="btn btn-primary addbtn" data-bs-toggle="modal" data-bs-target="#exampleModal"> Add Record</button>
+   </div>
+<table class="table mt-3">
+    <thead>
+        <tr>
+            <th scope="col"> Roll no.</th>
+            <th scope="col"> Name</th>
+            <th scope="col"> Date of Birth</th>
+            <th scope="col"> Score</th>
+            <th scope="col"> Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let row of allStudentRecords">
+            <td>{{row.rollNumber}}</td>
+            <td>{{row.name}}</td>
+            <td>{{row.dateOfBirth}}</td>
+            <td>{{row.score}}</td>
+            <td>
+                <button (click)="onEdit(row)" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">Edit</button>
+                <button class="btn btn-danger mx-3" (click)="deleteRecord(row)">Delete</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<app-footer></app-footer>
+
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Update Record</h5>
+          <button id="cancelbtn" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          
+
+    <form [formGroup]="formValue">
+        <div class="form-group">
+            <label for="InputRollNumber">Roll no</label>
+            <input type="number" formControlName="rollNumber" class="form-control" id="InputRollNumber" aria-describedby="emailHelp"
+                placeholder="Enter Roll Number">
+        </div>
+        <div class="form-group">
+            <label for="Name">Name</label>
+            <input type="text" formControlName="studentName" class="form-control" id="InputName" placeholder="Name">
+        </div>
+        <div class="form-group">
+            <label for="DateOfBirth">Date Of Birth</label>
+            <input type="date" formControlName="dateOfBirth" class="form-control" id="InputDateOfBirth" aria-describedby="emailHelp"
+                placeholder="Date Of Birth">
+        </div>
+        <div class="form-group">
+            <label for="InputScore">Score</label>
+            <input type="number" formControlName="score" class="form-control" id="InputScore" aria-describedby="emailHelp"
+                placeholder="Enter the scores">
+        </div>
+        <button type="button" class="btn btn-primary  add mt-3" (click)="addRecord()">Add Record</button>
+
+              <button (click)="updateRecord()" type="button" class="mt-3 btn btn-primary">Save changes</button>
+        
+    </form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  

@@ -1,0 +1,19 @@
+.container{
+    width: 400px;
+    margin-top: 50px;
+    border-width: 5px;
+}
+.customcontainer{
+    background-image: url('../../..\assets\images\signup.jpg');
+	/* src\assets\images\signup.jpg */
+    height: 84.8%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.cssloginform{
+    width: 400px;
+    margin-left: 49%;
+    padding-top: 5%;
+    border-width: 5px;
+}
